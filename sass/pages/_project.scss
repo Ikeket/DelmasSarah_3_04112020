@@ -1,42 +1,42 @@
-// .project {
-//     width: 100%;
-//     margin-bottom: $grid-gutter*1.2;
-//     display: grid;
-//     grid-template-columns: 5fr 3fr;
-//     grid-template-rows: repeat(3, auto);
-//     grid-gap: $grid-gutter;
-//     grid-template-areas: 
-//         "image synopsis"
-//         "tags synopsis"
-//         "btn btn";
-//     &__image {
-//         grid-area: image;
-//         @include img-ratio;
-//     }
-//     &__synopsis {
-//         grid-area: synopsis;
-//         padding-left: $grid-gutter;
-//         & h1 {
-//             color: $colour-white;
-//             @include heading-shadow;
-//         }
-//         & p {
-//             line-height: 2rem*1.25;
-//         }
-//     }
-//     &__tags {
-//         grid-area: tags;
-//         & p {
-//             color: $colour-white;
-//             & strong {
-//                 color: $colour-primary;
-//                 font-weight: 900;
-//                 font-style: italic;
-//             }
-//         }
-//     }
-//     &__btn {
-//         @include btn;
-//         grid-area: btn;
-//     }
-// }
+.project {
+    margin: 20px;
+
+    &-list {
+        display: flex;
+        align-items: center;
+        background-color: $secondary-background;
+        border-radius: 25px;
+        height: 75px;
+        margin: 25px 5px 25px 10px;
+        width: auto;
+        box-shadow: 0px 0px 12px 2px rgba(204, 202, 202, 0.582);
+        font-weight: bold;
+        
+        &__number {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 400;
+            width: 24px;
+            height: 24px;
+            background-color: $primary-color;
+            border-radius: 25px;
+            color: white;
+            margin-left: -10px;
+        }
+
+        & .fas {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 24px;
+            height: 24px;
+            color: grey;
+            margin: 0 20px;
+        }
+
+        & .fa-store {
+            color: $primary-color;
+        }
+    }
+}

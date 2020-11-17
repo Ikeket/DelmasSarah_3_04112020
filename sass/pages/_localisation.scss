@@ -1,0 +1,16 @@
+.localisation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: $primary-background;
+    box-shadow: inset 0px 6px 5px -7px $tiertiary-background;
+    & input {
+        width: 150px;
+        padding-left: 15px;
+        border: none;
+        font-size: 16px;
+        font-weight: bold;
+        background-color: $primary-background;
+    }
+}

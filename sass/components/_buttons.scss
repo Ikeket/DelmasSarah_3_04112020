@@ -1,3 +1,8 @@
-// .btn {
-//     @include btn
-// }
+.btn {
+    height: 55px;
+    width: 220px;
+    background: linear-gradient(175deg, $secondary-color 0%, $primary-color 80%, $primary-color 100%);
+    margin: 32px;
+    border: none;
+    border-radius: 25px;
+}
