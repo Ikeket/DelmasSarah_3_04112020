@@ -1,0 +1,10 @@
+.footer {
+    background-color: $tiertiary-background;
+    color: white;
+    padding: 27px;
+    &__title {
+        font-family: $tiertiary-font;
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+}

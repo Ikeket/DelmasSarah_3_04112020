@@ -1,0 +1,21 @@
+{
+  "name": "delmassarah_3_04112020",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "css": "css"
+  },
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ikeket/DelmasSarah_3_04112020.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ikeket/DelmasSarah_3_04112020/issues"
+  }
+}

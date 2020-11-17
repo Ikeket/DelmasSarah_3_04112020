@@ -1,0 +1,68 @@
+/* used on new_overplace text */
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  font-family: "Roboto",  "Font Awesome 5 free",  sans-serif;
+  margin: 0;
+  padding: 0;
+  outline-style: none;
+}
+
+body {
+  border: black solid 1px;
+  margin: auto;
+  max-width: 375px;
+}
+
+img {
+  width: 350px;
+  height: 150px;
+  object-fit: cover;
+}
+
+body {
+  font-family: 'Roboto', 'Font Awesome', sans-serif;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: initial;
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size: 1.5em;
+}
+
+ul {
+  list-style: none;
+}
+
+.footer {
+  background-color: #353535;
+  color: white;
+  padding: 27px;
+}
+
+.footer__title {
+  font-family: "Shrikhand", cursive;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__logo {
+  width: 164px;
+  height: auto;
+  margin-top: 21px;
+  margin-bottom: 13px;
+}

@@ -5,25 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <script src="https://kit.fontawesome.com/022660c1b2.js" crossorigin="anonymous"></script>
+
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="./lib/style.css">
+    <link rel="stylesheet" href="./css/main.css">
     <title>ohmyfood</title>
 </head>
 
 <body>
-    <header id="header__logo">
-        <img src="./images/logo/ohmyfood@2x.svg" alt="Logo d'ohmyfood">
+    <header class="header">
+        <img src="./assets/logo/ohmyfood@2x.svg" alt="Logo d'ohmyfood" class="header__logo">
     </header>
     
     <main>
-        <section id="localisation">
-            <i class="fas fa-map-marker-alt"></i><input type="search" value="Paris, Belleville">
+        <section class="localisation">
+            <span class="fas fa-map-marker-alt"></span><input type="search" value="Paris, Belleville">
         </section>
 
         <section>
-            <article id="presentation">
+            <article class="presentation">
                 <h2>Réservez le menu qui vous convient</h2>
                 <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
                 <button>Explorer nos restaurants</button>
@@ -50,12 +51,12 @@
                 </div>
             </article>
 
-            <article id="restaurants">
+            <article class="restaurants">
                 <h2>Restaurants</h2>
                 
                 <div class="restaurant_presentation">
                     <a href="./restaurants/la_palette_du_gout.html">
-                        <img src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Alt">
+                        <img src="./assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Alt">
                         <div class="restaurant_description">
                             <div class="restaurant_text">
                                 <h3>La palette du goût</h3>
@@ -69,7 +70,7 @@
                 
                 <div class="restaurant_presentation">
                     <a href="./restaurants/la_palette_du_gout.html">
-                        <img src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Alt">
+                        <img src="./assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Alt">
                         <div class="restaurant_description">
                             <div class="restaurant_text">
                                 <h3>La palette du goût</h3>
@@ -83,7 +84,7 @@
 
                 <div class="restaurant_presentation">
                     <a href="./restaurants/la_palette_du_gout.html">
-                        <img src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Alt">
+                        <img src="./assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Alt">
                         <div class="restaurant_description">
                             <div class="restaurant_text">
                                 <h3>La palette du goût</h3>
@@ -97,7 +98,7 @@
 
                 <div class="restaurant_presentation">
                     <a href="./restaurants/la_palette_du_gout.html">
-                        <img src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Alt">
+                        <img src="./assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Alt">
                         <div class="restaurant_description">
                             <div class="restaurant_text">
                                 <h3>La palette du goût</h3>
@@ -113,8 +114,8 @@
         </section>
     </main>
 
-    <footer>
-        <h3>ohmyfood</h3>
+    <footer class="footer">
+        <h3 class="footer__title">ohmyfood</h3>
         <ul>
             <li><i class="icon fas fa-utensils"></i> Proposer un restaurant</li>
             <li><i class="icon fas fa-hands-helping"></i> Devenir partenaire</li>
