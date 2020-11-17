@@ -123,7 +123,7 @@ button {
 }
 
 .menu {
-  background-image: url("../../assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+  background-image: url("./../assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
   background-size: 100% 300px;
   background-repeat: no-repeat;
   background-color: #EAEAEA;
