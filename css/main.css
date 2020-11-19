@@ -77,6 +77,7 @@ button {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .header__logo {
@@ -84,6 +85,12 @@ button {
   height: auto;
   margin-top: 21px;
   margin-bottom: 13px;
+}
+
+.header__back {
+  position: absolute;
+  left: 20px;
+  top: 25px;
 }
 
 .about {
