@@ -14,12 +14,19 @@ a {
     color: initial;
 }
 
-h2 {
+h2, input {
     font-family: 'Roboto', sans-serif;
-    font-weight: 800;
-    font-size: 1.5em;
 }
 
+input {
+    font-weight: 500;
+    font-size: 1em;
+} 
+h2 {
+    font-weight: 800;
+
+    font-size: 1.5em;
+}
 p {
     font-size: 18px;
     font-weight: 300;

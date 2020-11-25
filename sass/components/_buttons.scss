@@ -1,6 +1,8 @@
 .btn {
     background: linear-gradient(175deg, $secondary-color 0%, $primary-color 80%, $primary-color 100%);
-    border: none;
+    background-color: $secondary-color;
+    border:0;
+	cursor:pointer;
     height: 50px;
     margin: 20px auto;
     width: 220px;
@@ -9,7 +11,11 @@
     @include box-shadow;
 
     &:hover {
-        @include bright-box-shadow;
         @include bright-button;
+    }
+
+    &:active {
+        position:relative;
+        top:1px;
     }
 }
