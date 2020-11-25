@@ -18,3 +18,32 @@
 @mixin bright-button {
     filter: brightness(1.10);
 }
+
+
+// Small devices 375
+@mixin sm {
+    @media (min-width: #{$screen-sm-min}) {
+        @content;
+    }
+}
+
+ // Medium devices 600
+@mixin md {
+    @media (min-width: #{$screen-md-min}) {
+        @content;
+    }
+}
+
+ // Large devices 900
+@mixin lg {
+    @media (min-width: #{$screen-lg-min}) {
+        @content;
+    }
+}
+
+ // Large devices 1023
+@mixin xl {
+    @media (min-width: #{$screen-xl-min}) {
+        @content;
+    }
+}

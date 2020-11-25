@@ -26,9 +26,25 @@ h2 {
     font-weight: 800;
     font-size: 1.5em;
 }
-h3 {
-    font-size: 1em;
-    font-weight: 600;
+
+span {
+    &.number {
+        font-size: 0.8em;
+        color: $octonary-color;
+    }
+
+    &.fa {
+        font-size: 1.2em;
+        color: $denary-color;
+
+        &.fa-store {
+            font-size: 1em;
+        }
+    }
+
+    &.text {
+        font-weight: 600;
+    }
 }
 p {
     font-size: 18px;
