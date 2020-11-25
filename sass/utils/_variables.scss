@@ -1,31 +1,18 @@
-// $heading-shadow-size: .55rem;
-// $layout-margin: 6rem;
-// $grid-gutter: $layout-margin * .25;
+// colours
 
-$primary-color: #9356DC;
-$secondary-color: #FF79DA;
-$tiertiary-color: #99E2D0;
-$fourth-color: #008766; /* used on new_overplace text */
+// backgrounds coulours
+$primary-color: rgba(147, 86, 220, 1); // #9356DC on graphic charter
+$secondary-color: rgba(255, 121, 218, 1); // #FF79DA on graphic charter
+$tertiary-color: rgba(153, 226, 208, 1); // #99E2D0 on graphic charter
+$quaternary-color: rgba(234, 234, 234, 1); // #EAEAEA section bg
+$quinary-color: rgba(246, 246, 246, 1); // #F6F6F6 section bg
+$senary-color: rgba(53, 53, 53, 1); // #353535 footer bg
+$septenary-color: rgba(245, 237, 255, 1); // #F5EDFF section bg:hover
 
-$primary-background: #EAEAEA;
-$secondary-background: #F6F6F6;
-$tiertiary-background: #353535;
+// fonts colours
+$octonary-color: rgba(255, 255, 255, 1); // WHITE : for buttons and footer__logo
+$nonary-color: rgba(0, 135, 102, 1); // #008766 for restaurant__link--new
 
 $primary-font: "Roboto", sans-serif;
 $secondary-font: "Font Awesome 5 free", sans-serif;
-$tiertiary-font: "Shrikhand", cursive;
-
-
-// .test {
-
-//     &__test {
-
-//         &__test {
-//             width: fit-content;
-//         }
-//     }
-// }
-
-// .test__test__test {
-//     width: fit-content;
-// }
+$tertiary-font: "Shrikhand", cursive;

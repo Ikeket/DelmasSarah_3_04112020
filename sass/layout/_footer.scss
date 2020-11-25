@@ -1,10 +1,15 @@
 .footer {
-    background-color: $tiertiary-background;
+    background-color: $octonary-color;
     color: white;
     padding: 27px;
     &__title {
-        font-family: $tiertiary-font;
+        font-family: $tertiary-font;
         font-weight: 400;
         margin-bottom: 20px;
+    }
+
+    & .fa-hands-helping {
+        transform: rotate(-15deg);
+        font-size: 12px;
     }
 }

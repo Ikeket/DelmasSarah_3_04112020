@@ -1,6 +1,12 @@
-body {
-    font-family: 'Roboto', 'Font Awesome', sans-serif;
-    line-height: 1.5;
+*,
+*::after,
+*::before {
+    font-family: 
+        "Roboto", 
+        "Font Awesome 5 free", 
+        sans-serif;
+    outline-style: none;
+    list-style: none;
 }
 
 a {
@@ -10,12 +16,13 @@ a {
 
 h2 {
     font-family: 'Roboto', sans-serif;
-    font-weight: 600;
+    font-weight: 800;
     font-size: 1.5em;
 }
 
-ul {
-    list-style: none;
+p {
+    font-size: 18px;
+    font-weight: 300;
 }
 
 li {
@@ -24,7 +31,7 @@ li {
     }
 }
 button {
-    font-size: 17px;
+    font-size: 1em;
     font-weight: 400;
     color: white;
 }

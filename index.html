@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="./css/main.css">
     <link rel="icon" type="image/png" href="../assets/Favico.png" />
     <title>ohmyfood</title>
+
+    <meta name="description" content="Avec ohmyfood, découvrez les meilleures tables de votre région à votre domicile ! Un service de livraison digne des plus grands restaurants !">
 </head>
 
 <body>
@@ -19,18 +21,18 @@
         <img src="./assets/logo/ohmyfood@2x.svg" alt="Logo d'ohmyfood" class="header__logo">
     </header>
 
-    <section class="localisation">
-        <span class="fas fa-map-marker-alt"></span><input type="search" value="Paris, Belleville" class="localisation__input">
-    </section>
+    <section class="sect-one">
+        <div class="sect-one__localisation">
+            <span class="fas fa-map-marker-alt"></span><input type="search" value="Paris, Belleville" class="localisation__input">
+        </div>
 
-    <section>
-        <article class="about">
+        <div class="sect-one__brief">
             <h2>Réservez le menu qui vous convient</h2>
             <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
             <button class="btn">Explorer nos restaurants</button>
-        </article>
+        </div>
         
-        <article class="project">
+        <article class="sect-one__guide">
             <h2>Fonctionnement</h2>
             <div class="project-list">
                 <span class="project-list__number">1</span>
@@ -50,6 +52,14 @@
                 Choisissez un restaurant
             </div>
         </article>
+    </section>
+
+
+
+    <section>
+        
+        
+        
 
         <article class="restaurant">
             <h2>Restaurants</h2>
@@ -63,7 +73,7 @@
                             <p>Ménilmontant</p>
                         </div>
                         
-                        <i class="far fa-heart fa-lg"></i>
+                        
                     </div>
 
                     <span class="restaurant__link--new">Nouveau</span>
