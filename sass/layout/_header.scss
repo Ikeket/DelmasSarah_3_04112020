@@ -1,15 +1,15 @@
 .header {
     flex-direction: row;
     position: relative;
-
     @include flex-CC;
-    
+
     &__logo {
-        width: 164px;
         height: auto;
         margin-top: 21px;
         margin-bottom: 13px;
+        width: 164px;
     }
+
     &__back {
         position: absolute;
         left: 20px;

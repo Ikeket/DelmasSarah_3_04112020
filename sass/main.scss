@@ -1,23 +1,25 @@
+// utils : always in first
+@import "./utils/breakpoints"; // media quieries breakpoints
 
-@import "./utils/breakpoints";
-@import "./utils/variables";
+
 // @import "./utils/functions";
 @import "./utils/mixins";
 // @import "./utils/extensions";
 
-@import "./base/base";
-@import "./base/typography";
+@import "./utils/variables";
 
+// base
+@import "./base/base"; // contains basic property like "margin: 0px" on root
+@import "./base/typography"; // contains all fonts properties (color, size, weight, etc.)
+
+// components
 @import "./components/buttons";
 
-// @import "./layout/footer";
+
+// layout
+@import "./layout/footer";
 @import "./layout/header";
-@import "./layout/sect-one";
+@import "./layout/sect-one"; // contains : localisation, the little brief of site (brief) and how to use it (guide)!
 
-// @import "./pages/menu";
-// @import "./pages/project";
-// @import "./pages/restaurants";
-
-
-
-/*# sourceMappingURL=style.css.map */
+// pages
+@import "./pages/restaurants";

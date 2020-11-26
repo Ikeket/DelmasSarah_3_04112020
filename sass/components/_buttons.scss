@@ -6,14 +6,13 @@
     height: 50px;
     margin: 20px auto;
     width: 220px;
-
     @include radius25;
     @include box-shadow;
 
     &:hover {
         @include bright-button;
     }
-
+    
     &:active {
         position:relative;
         top:1px;

@@ -1,11 +1,12 @@
 .sect-one {
-
+// empty space for futures properties
     &__localisation {
     height: 50px;
     background-color: $quaternary-color;
     box-shadow: inset 0px 6px 5px -7px $senary-color;
     // box-shadow mixin not configured for single use of the property
     @include flex-CC;
+
         & input {
             background-color: $quaternary-color;
             border: none;
@@ -20,9 +21,11 @@
         padding: 40px 30px 30px 30px;
         text-align: center;
         @include flex-CC;
+
         & h2 {
             margin: 0 15px;
         }
+
         & p {
             margin: 10px auto;
         }
@@ -33,6 +36,7 @@
         @include xl {
             margin: 50px auto;
             width: 1023px;
+
             & h2 {
                 margin-bottom: 30px;
                 text-align: center;
@@ -44,6 +48,7 @@
             @include xl {
                 @include flex-CC;
             }
+
             &__bloc {
                 align-items: center;
                 background-color: $quinary-color;
@@ -58,6 +63,7 @@
                     margin: auto 25px;
                     width: 400px;
                 }
+
                 &__number {
                     background-color: $primary-color;
                     height: 24px;
@@ -66,6 +72,7 @@
                     @include flex-CC;
                     @include radius25;
                 }
+
                 & .fa {
                     height: 40px;
                     width: 40px;
@@ -75,6 +82,7 @@
                         width: 60px;
                     }
                 }
+
                 &:hover {
                     background-color: $septenary-color;
                     & .fa {

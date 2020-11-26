@@ -2,9 +2,8 @@
 *::after,
 *::before {
     font-family: 
-        "Roboto", 
-        "Font Awesome 5 free", 
-        sans-serif;
+        $primary-font, 
+        $secondary-font;
     outline-style: none;
     list-style: none;
 }
@@ -14,17 +13,49 @@ a {
     color: initial;
 }
 
-h2, input {
-    font-family: 'Roboto', sans-serif;
+button {
+    font-weight: 400;
+    color: $octonary-color;
 }
 
-input {
-    font-weight: 500;
-    font-size: 1em;
-} 
+.footer__title {
+    color: $octonary-color;
+    font-family: $tertiary-font;
+    font-weight: 400;
+}
+
 h2 {
     font-weight: 800;
     font-size: 1.5em;
+}
+
+
+input {
+    font-weight: 500;
+} 
+
+button, 
+input {
+    font-size: 1em;
+}
+
+h2, 
+input {
+    font-family: $primary-font;
+}
+
+li {
+    font-size: 14px;
+
+    & a {
+        color: white;
+        letter-spacing: 0.06em;
+    }
+}
+
+p {
+    font-size: 18px;
+    font-weight: 300;
 }
 
 span {
@@ -45,19 +76,4 @@ span {
     &.text {
         font-weight: 600;
     }
-}
-p {
-    font-size: 18px;
-    font-weight: 300;
-}
-
-li {
-    & a {
-        color: white;
-    }
-}
-button {
-    font-size: 1em;
-    font-weight: 400;
-    color: white;
 }
