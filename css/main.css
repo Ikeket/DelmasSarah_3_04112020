@@ -5,12 +5,6 @@
   padding: 0;
 }
 
-img {
-  width: 500px;
-  height: 250px;
-  object-fit: cover;
-}
-
 *,
 *::after,
 *::before {
@@ -40,6 +34,10 @@ h2 {
   font-size: 1.5em;
 }
 
+h3 {
+  font-size: 20px;
+}
+
 input {
   font-weight: 500;
 }
@@ -64,7 +62,7 @@ li a {
 }
 
 p {
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 300;
 }
 
@@ -84,6 +82,16 @@ span.fa.fa-store {
 
 span.text {
   font-weight: 600;
+}
+
+span.new {
+  color: #008766;
+  font-size: 14px;
+}
+
+.menu h1 {
+  font-family: "Shrikhand", cursive;
+  font-weight: 400;
 }
 
 .btn {
@@ -262,58 +270,178 @@ span.text {
 
 .sect-two {
   background-color: #eaeaea;
-  padding: 30px 20px;
+  padding: 50px 20px;
+}
+
+.sect-two__restaurant {
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 @media (min-width: 600px) {
   .sect-two__restaurant {
+    flex-wrap: wrap;
     align-items: center;
     display: flex;
     justify-content: center;
   }
+  .sect-two__restaurant--div {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .sect-two__restaurant__link {
+  background-color: white;
   height: 250px;
+  margin-bottom: 20px;
   overflow: hidden;
   position: relative;
   width: 100%;
-  border-radius: 25px;
   box-shadow: 0px 0px 12px 2px rgba(158, 158, 158, 0.582);
+  border-radius: 15px;
 }
 
-.sect-two__restaurant__link__text {
-  padding: 5px 20px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.sect-two__restaurant__link--new {
-  position: absolute;
-  text-align: center;
-  width: 80px;
-  right: 20px;
-  top: 20px;
-  background-color: #99e2d0;
-  color: #eaeaea;
+@media (min-width: 600px) {
+  .sect-two__restaurant__link {
+    margin: 10px;
+  }
 }
 
 .sect-two__restaurant__link img {
-  width: 100%;
   height: 175px;
+  object-fit: cover;
+  width: 100%;
 }
 
-.sect-two__restaurant__link__heart {
+.sect-two__restaurant__link__text {
+  padding: 10px 20px;
+}
+
+.sect-two__restaurant__link--new {
+  background-color: #99e2d0;
   position: absolute;
-  width: 30px;
   height: 30px;
-  right: 30px;
-  bottom: 32px;
-  color: #9356dc;
+  right: 10px;
+  top: 15px;
+  width: 80px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.menu {
+  background-image: url("./../assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: #eaeaea;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 60px;
+}
+
+@media (min-width: 900px) {
+  .menu {
+    background-attachment: fixed;
+    background-size: cover;
+  }
+}
+
+.menu--border {
+  background-color: #eaeaea;
+  border-radius: 25px 25px 0 0;
+  margin-top: 180px;
+}
+
+@media (min-width: 375px) {
+  .menu--border {
+    margin-top: 210px;
+  }
+}
+
+@media (min-width: 600px) {
+  .menu--border {
+    margin-top: 350px;
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: 900px) {
+  .menu--border {
+    margin-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 600px;
+    border-radius: 25px;
+  }
+}
+
+.menu__title {
+  align-items: center;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  padding: 30px 20px 20px 20px;
+}
+
+.menu__article {
+  background-color: #eaeaea;
+  padding: 20px;
+}
+
+@media (min-width: 600px) {
+  .menu__article {
+    margin: 0 30px;
+  }
+}
+
+.menu__article h2 {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.menu__article--underline {
+  border-bottom: 2px solid #99e2d0;
+}
+
+.menu__article-dish {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  max-height: 70px;
+  justify-content: space-between;
+  margin: 20px 0;
+  padding: 14px 32px 14px 12px;
+  overflow: hidden;
+  box-shadow: 0px 0px 12px 2px rgba(158, 158, 158, 0.582);
+  border-radius: 15px;
+}
+
+.menu__article-dish__text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.menu__article-dish--price {
+  font-weight: bold;
+}
+
+.menu__article-dish__checkbox {
+  display: none;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 50px;
+  height: 100%;
+  background-color: #99e2d0;
+  color: white;
+  border: none;
+}
+
+.menu .btn {
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }

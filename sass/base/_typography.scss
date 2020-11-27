@@ -29,6 +29,10 @@ h2 {
     font-size: 1.5em;
 }
 
+h3 {
+    font-size: 20px;
+}
+
 
 input {
     font-weight: 500;
@@ -54,7 +58,7 @@ li {
 }
 
 p {
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 300;
 }
 
@@ -76,4 +80,17 @@ span {
     &.text {
         font-weight: 600;
     }
+
+    &.new {
+        color: $nonary-color;
+        font-size: 14px;
+    }
+}
+
+.menu {
+    & h1 {
+        font-family: $tertiary-font;
+        font-weight: 400;
+    }
+
 }

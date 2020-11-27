@@ -1,0 +1,52 @@
+.sect-two {
+    background-color: $quaternary-color;
+    padding: 50px 20px;
+
+    &__restaurant {
+        margin-bottom: 20px;
+        margin-top: 20px;
+        @include md {
+            flex-wrap: wrap;
+            @include flex-CC;
+
+            &--div {
+                display: flex;
+                flex-direction: row;
+            }
+        }
+
+        &__link {
+            background-color: $octonary-color;
+            height: 250px;
+            margin-bottom: 20px;
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+            @include box-shadow;
+            @include radius15;
+            @include md {
+                margin: 10px;
+            }
+
+            & img {
+                height: 175px;
+                object-fit: cover;
+                width: 100%;
+            }
+
+            &__text {
+                padding: 10px 20px;
+            }
+
+            &--new {
+                background-color: $tertiary-color;
+                position: absolute;
+                height: 30px;
+                right: 10px;
+                top: 15px;
+                width: 80px;
+                @include flex-CC;
+            }
+        }
+    }
+}

@@ -1,31 +1,56 @@
 
 .menu {
     background-image: url("./../assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
-    background-size: 100% 300px;
+    background-size: 100%;
     background-repeat: no-repeat;
-    background-color: $primary-background;
+    background-color: $quaternary-color;
     display: flex;
     flex-direction: column;
+    padding-bottom: 60px;
 
+    @include lg {
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    &--border { 
+        background-color: $quaternary-color;
+        border-radius: 25px 25px 0 0;
+        margin-top: 180px;
+
+        @include sm {
+            margin-top: 210px;
+        }
+
+        @include md {
+            margin-top: 350px;
+            padding: 0 20px;
+        }
+
+        @include lg {
+            margin-top: 200px;
+            margin-left: auto;
+            margin-right: auto;
+            min-width: 600px;
+            @include radius25;
+        }
+
+    }
     &__title {
-        margin-top: 240px;
-        padding: 20px;
+        align-items: center;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        align-items: center;
-        border-radius: 25px 25px 0 0;
-        background-color: $primary-background;
-    }
-
-    & h1 {
-        font-family: $tiertiary-font;
-        font-weight: 400;
+        padding: 30px 20px 20px 20px;
     }
 
     &__article {   
-
+        background-color: $quaternary-color;
         padding: 20px;
+
+        @include md {
+            margin: 0 30px;
+        }
 
         & h2 {
             text-transform: uppercase;
@@ -34,39 +59,45 @@
         }
 
         &--underline {
-            border-bottom: 5px solid $tiertiary-color;
+            border-bottom: 2px solid $tertiary-color;
         }
 
         &-dish {
-            background-color: white;
-            border-radius: 15px;
+            background-color: $octonary-color;
             display: flex;
-            margin: 10px 0;
-            flex-direction: row;
+            flex-direction: column;
+            max-height: 70px;
             justify-content: space-between;
-            align-items: flex-end;
+            margin: 20px 0;
+            padding: 14px 32px 14px 12px;
             overflow: hidden;
-            height: 75px;
+            @include box-shadow;
+            @include radius15;
 
             &__text {
-                padding: 10px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
             }
             &--price {
                 font-weight: bold;
-                padding: 10px;
             }
 
             &__checkbox {
-                display: flex;
+                display: none;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
                 width: 50px;
                 height: 100%;
-                background-color: $tiertiary-color;
+                background-color: $tertiary-color;
                 color: white;
                 border: none;
             }
         }
+    }
+
+    & .btn {
+        @include flex-CC;
     }
 }
