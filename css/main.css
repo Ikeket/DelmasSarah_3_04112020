@@ -116,59 +116,59 @@ span.new {
 }
 
 .loader {
-  position: relative;
-  margin: auto;
-  width: 50px;
   height: 50px;
+  margin: auto;
+  position: relative;
   transform: scale(0.6);
+  width: 50px;
 }
 
 .loader__circle {
-  position: absolute;
-  background-color: #9356dc;
-  height: 9px;
-  width: 9px;
-  animation-name: loader;
+  animation-delay: none;
   animation-duration: 2.56s;
-  animation-iteration-count: infinite;
-  animation-direction: normal;
+  animation-iteration-count: 2;
+  animation-name: loader;
+  animation-fill-mode: forwards;
+  height: 9px;
+  position: absolute;
+  width: 9px;
   border-radius: 25px;
 }
 
 .loader__circle--01 {
+  animation-delay: 0.96s;
   left: 0;
   top: 20px;
-  animation-delay: 0.96s;
 }
 
 .loader__circle--02 {
+  animation-delay: 1.28s;
   left: 6px;
   top: 6px;
-  animation-delay: 1.28s;
 }
 
 .loader__circle--03 {
+  animation-delay: 1.6s;
   left: 20px;
   top: 0;
-  animation-delay: 1.6s;
 }
 
 .loader__circle--04 {
+  animation-delay: 1.92s;
   right: 6px;
   top: 6px;
-  animation-delay: 1.92s;
 }
 
 .loader__circle--05 {
+  animation-delay: 2.24s;
   right: 0;
   top: 20px;
-  animation-delay: 2.24s;
 }
 
 .loader__circle--06 {
-  right: 6px;
-  bottom: 6px;
   animation-delay: 2.56s;
+  bottom: 6px;
+  right: 6px;
 }
 
 .loader__circle--07 {
@@ -178,17 +178,19 @@ span.new {
 }
 
 .loader__circle--08 {
-  left: 6px;
-  bottom: 6px;
   animation-delay: 3.2s;
+  bottom: 6px;
+  left: 6px;
 }
 
 @keyframes loader {
   0% {
     background-color: #ff79da;
+    opacity: 1;
   }
   100% {
     background-color: #9356dc;
+    opacity: 0;
   }
 }
 
@@ -233,6 +235,13 @@ span.new {
   position: absolute;
   left: 20px;
   top: 25px;
+}
+
+.header__loader {
+  position: absolute;
+  left: calc(50% - 50px);
+  right: calc(50% - 50px);
+  bottom: -100px;
 }
 
 .sect-one__localisation {
@@ -347,6 +356,7 @@ span.new {
 
 .sect-two {
   background-color: #eaeaea;
+  position: relative;
   padding: 50px calc(5px + 4%);
 }
 

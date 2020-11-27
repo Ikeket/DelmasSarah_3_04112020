@@ -1,7 +1,7 @@
 .sect-two {
     background-color: $quaternary-color;
+    position: relative;
     @include padding-homepage;
-    
     &__restaurant {
         margin-bottom: 20px;
         margin-top: 20px;

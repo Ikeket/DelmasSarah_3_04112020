@@ -2,7 +2,6 @@
     flex-direction: row;
     position: relative;
     @include flex-CC;
-
     &__logo {
         height: auto;
         margin-top: 21px;
@@ -14,5 +13,12 @@
         position: absolute;
         left: 20px;
         top: 25px;
+    }
+
+    &__loader {
+        position: absolute;
+        left: calc(50% - 50px);
+        right: calc(50% - 50px);
+        bottom: -100px;
     }
 }

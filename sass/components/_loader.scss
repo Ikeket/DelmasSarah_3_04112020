@@ -1,70 +1,70 @@
 .loader{
-position:relative;
-margin: auto;
-width: 50px;
-height: 50px;
-transform:scale(0.6);
-
-&__circle {
-    position: absolute;
-    background-color: $primary-color;
-    height: 9px;
-    width: 9px;
-    animation-name:loader;
-    animation-duration: 2.56s;
-    animation-iteration-count: infinite;
-    animation-direction: normal;
-    @include radius25;
-        &--01 {
-            left: 0;
-            top: 20px;
-            animation-delay: 0.96s;
+    height: 50px;
+    margin: auto;
+    position:relative;
+    transform:scale(0.6);
+    width: 50px;
+    &__circle {
+        animation-delay: none;
+        animation-duration: 2.56s;
+        animation-iteration-count: 2;
+        animation-name: loader;
+        animation-fill-mode: forwards;
+        height: 9px;
+        position: absolute;
+        width: 9px;
+        @include radius25;
+            &--01 {
+                animation-delay: 0.96s;
+                left: 0;
+                top: 20px;
+            }
+            &--02 {
+                animation-delay:1.28s;
+                left: 6px;
+                top: 6px;
+            }
+            &--03{
+                animation-delay: 1.6s;
+                left: 20px;
+                top: 0;
+            }
+            &--04{
+                animation-delay:1.92s;
+                right:6px;
+                top:6px;
+            }
+            &--05 {
+                animation-delay:2.24s;
+                right: 0;
+                top: 20px;
+            }
+            &--06 {
+                animation-delay:2.56s;
+                bottom: 6px;
+                right: 6px;
+            }
+            &--07{
+                left: 20px;
+                bottom: 0;
+                animation-delay:2.88s;
+            }
+            &--08{
+                animation-delay: 3.2s;
+                bottom: 6px;
+                left: 6px;
+            }
         }
-        &--02 {
-            left: 6px;
-            top: 6px;
-            animation-delay:1.28s;
-        }
-        &--03{
-            left: 20px;
-            top: 0;
-            animation-delay: 1.6s;
-        }
-        &--04{
-            right:6px;
-            top:6px;
-            animation-delay:1.92s;
-        }
-        &--05 {
-            right: 0;
-            top: 20px;
-            animation-delay:2.24s;
-        }
-        &--06 {
-            right: 6px;
-            bottom: 6px;
-            animation-delay:2.56s;
-        }
-
-        &--07{
-            left: 20px;
-            bottom: 0;
-            animation-delay:2.88s;
-        }
-        &--08{
-            left: 6px;
-            bottom: 6px;
-            animation-delay:3.2s;
-        }
-    }
 }
 
 @keyframes loader {
     0% {
-        background-color: $secondary-color
+        background-color: $secondary-color;
+        opacity: 1;
     }
 
     100% {
-    background-color: $primary-color
+        background-color: $primary-color;
+        opacity: 0;
     }
 }
