@@ -1,0 +1,70 @@
+.loader{
+position:relative;
+margin: auto;
+width: 50px;
+height: 50px;
+transform:scale(0.6);
+
+&__circle {
+    position: absolute;
+    background-color: $primary-color;
+    height: 9px;
+    width: 9px;
+    animation-name:loader;
+    animation-duration: 2.56s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    @include radius25;
+        &--01 {
+            left: 0;
+            top: 20px;
+            animation-delay: 0.96s;
+        }
+        &--02 {
+            left: 6px;
+            top: 6px;
+            animation-delay:1.28s;
+        }
+        &--03{
+            left: 20px;
+            top: 0;
+            animation-delay: 1.6s;
+        }
+        &--04{
+            right:6px;
+            top:6px;
+            animation-delay:1.92s;
+        }
+        &--05 {
+            right: 0;
+            top: 20px;
+            animation-delay:2.24s;
+        }
+        &--06 {
+            right: 6px;
+            bottom: 6px;
+            animation-delay:2.56s;
+        }
+
+        &--07{
+            left: 20px;
+            bottom: 0;
+            animation-delay:2.88s;
+        }
+        &--08{
+            left: 6px;
+            bottom: 6px;
+            animation-delay:3.2s;
+        }
+    }
+}
+
+@keyframes loader {
+    0% {
+        background-color: $secondary-color
+    }
+
+    100% {
+    background-color: $primary-color
+    }
+}

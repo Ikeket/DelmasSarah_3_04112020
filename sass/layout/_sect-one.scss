@@ -32,10 +32,12 @@
     }
 
     &__guide {
-        margin: 50px 20px;
+        @include padding-homepage;
+        
         @include xl {
-            margin: 50px auto;
+            margin: auto;
             width: 1023px;
+
 
             & h2 {
                 margin-bottom: 30px;
@@ -45,50 +47,51 @@
 
         &-list {
         // empty space for futures properties
+
             @include xl {
                 @include flex-CC;
             }
 
             &__bloc {
-                align-items: center;
-                background-color: $quinary-color;
-                display: flex;
-                height: 75px;
-                margin: 25px 6px 25px 10px;
-                width: auto;
-                @include box-shadow;
-                @include radius25;
-                @include xl {
-                    flex-direction: row;
-                    margin: auto 25px;
-                    width: 400px;
-                }
-
-                &__number {
-                    background-color: $primary-color;
-                    height: 24px;
-                    margin-left: -10px;
-                    width: 24px;
-                    @include flex-CC;
+                    align-items: center;
+                    background-color: $quinary-color;
+                    display: flex;
+                    height: 75px;
+                    margin: 25px 6px 25px 10px;
+                    width: auto;
+                    @include box-shadow;
                     @include radius25;
-                }
-
-                & .fa {
-                    height: 40px;
-                    width: 40px;
-                    @include flex-CC;
-                    @include md {
-                        height: 60px;
-                        width: 60px;
+                    @include xl {
+                        flex-direction: row;
+                        margin: auto 25px;
+                        width: 400px;
                     }
-                }
 
-                &:hover {
-                    background-color: $septenary-color;
+                    &__number {
+                        background-color: $primary-color;
+                        height: 24px;
+                        margin-left: -10px;
+                        width: 24px;
+                        @include flex-CC;
+                        @include radius25;
+                    }
+
                     & .fa {
-                        color: $primary-color;
+                        height: 40px;
+                        width: 40px;
+                        @include flex-CC;
+                        @include md {
+                            height: 60px;
+                            width: 60px;
+                        }
                     }
-                }
+
+                    &:hover {
+                        background-color: $septenary-color;
+                        & .fa {
+                            color: $primary-color;
+                        }
+                    }
             }
 
         }

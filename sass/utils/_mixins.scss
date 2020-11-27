@@ -12,6 +12,11 @@
     justify-content: center;
 }
 
+
+@mixin padding-homepage {
+    padding: 50px calc(5px + 4%);
+    // 4% = 15px of 375px and 15px+5px = 20px. So the original margin of this size)
+}
 // Radius
 
 @mixin radius15 {

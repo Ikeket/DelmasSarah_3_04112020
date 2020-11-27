@@ -115,6 +115,83 @@ span.new {
   top: 1px;
 }
 
+.loader {
+  position: relative;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  transform: scale(0.6);
+}
+
+.loader__circle {
+  position: absolute;
+  background-color: #9356dc;
+  height: 9px;
+  width: 9px;
+  animation-name: loader;
+  animation-duration: 2.56s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  border-radius: 25px;
+}
+
+.loader__circle--01 {
+  left: 0;
+  top: 20px;
+  animation-delay: 0.96s;
+}
+
+.loader__circle--02 {
+  left: 6px;
+  top: 6px;
+  animation-delay: 1.28s;
+}
+
+.loader__circle--03 {
+  left: 20px;
+  top: 0;
+  animation-delay: 1.6s;
+}
+
+.loader__circle--04 {
+  right: 6px;
+  top: 6px;
+  animation-delay: 1.92s;
+}
+
+.loader__circle--05 {
+  right: 0;
+  top: 20px;
+  animation-delay: 2.24s;
+}
+
+.loader__circle--06 {
+  right: 6px;
+  bottom: 6px;
+  animation-delay: 2.56s;
+}
+
+.loader__circle--07 {
+  left: 20px;
+  bottom: 0;
+  animation-delay: 2.88s;
+}
+
+.loader__circle--08 {
+  left: 6px;
+  bottom: 6px;
+  animation-delay: 3.2s;
+}
+
+@keyframes loader {
+  0% {
+    background-color: #ff79da;
+  }
+  100% {
+    background-color: #9356dc;
+  }
+}
+
 .footer {
   background-color: #353535;
   padding: 27px;
@@ -193,12 +270,12 @@ span.new {
 }
 
 .sect-one__guide {
-  margin: 50px 20px;
+  padding: 50px calc(5px + 4%);
 }
 
 @media (min-width: 1024px) {
   .sect-one__guide {
-    margin: 50px auto;
+    margin: auto;
     width: 1023px;
   }
   .sect-one__guide h2 {
@@ -270,7 +347,7 @@ span.new {
 
 .sect-two {
   background-color: #eaeaea;
-  padding: 50px 20px;
+  padding: 50px calc(5px + 4%);
 }
 
 .sect-two__restaurant {
