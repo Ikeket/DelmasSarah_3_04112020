@@ -7,7 +7,7 @@
     &__circle {
         animation-delay: none;
         animation-duration: 2.56s;
-        animation-iteration-count: 2;
+        animation-iteration-count: 1;
         animation-name: loader;
         animation-fill-mode: forwards;
         height: 9px;
@@ -62,9 +62,32 @@
         background-color: $secondary-color;
         opacity: 1;
     }
-
+    50% {
+        background-color: $primary-color;
+        opacity: 0;
+    }
     100% {
         background-color: $primary-color;
         opacity: 0;
+    }
+}
+
+main {
+    animation-delay: none;
+    animation-duration: 8s;
+    animation-iteration-count: 1;
+    animation-name: main;
+    animation-fill-mode: forwards;
+}
+
+@keyframes main {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }
