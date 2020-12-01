@@ -80,6 +80,22 @@ span.fa.fa-store {
   font-size: 1em;
 }
 
+span.fa-heart {
+  font-size: 1.5em;
+}
+
+span.fa-heart.far {
+  color: #353535;
+  font-weight: 100;
+}
+
+span.fa-heart.fas {
+  color: #9c47fc;
+  background: linear-gradient(175deg, #9356dc 0%, #ff79da 80%, #ff79da 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 span.text {
   font-weight: 600;
 }
@@ -439,6 +455,26 @@ main {
   align-items: center;
   display: flex;
   justify-content: center;
+}
+
+.sect-two__restaurant__link__favourite {
+  position: relative;
+}
+
+.sect-two__restaurant__link__favourite--hover, .sect-two__restaurant__link__favourite--normal {
+  bottom: 20px;
+  cursor: pointer;
+  position: absolute;
+  right: 25px;
+}
+
+.sect-two__restaurant__link__favourite--hover {
+  background-color: white;
+}
+
+.sect-two__restaurant__link__favourite--hover:hover {
+  display: none;
+  background: none;
 }
 
 .menu {

@@ -68,12 +68,28 @@ span {
         color: $octonary-color;
     }
 
+    // font awesome icons
     &.fa {
         font-size: 1.2em;
         color: $denary-color;
 
         &.fa-store {
             font-size: 1em;
+        }
+
+        // favourite icon for menu
+        &-heart {
+            font-size: 1.5em;
+            &.far {
+                color: $senary-color;
+                font-weight: 100;
+            }
+            &.fas {
+                color: #9c47fc;
+                background: linear-gradient(175deg, $primary-color 0%, $secondary-color 80%, $secondary-color 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
         }
     }
 

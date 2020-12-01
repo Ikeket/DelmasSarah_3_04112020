@@ -34,38 +34,39 @@
     </header>
     <main>
         <section class="sect-one">
-        <div class="sect-one__localisation">
-            <span class="fas fa-map-marker-alt"></span><input type="search" value="Paris, Belleville" class="localisation__input">
-        </div>
+            <label for="localisation" class="sect-one__localisation">
+                <span class="fas fa-map-marker-alt"></span>
+                <input type="search" value="Paris, Belleville" id="localisation" class="localisation__input">
+            </label>
 
-        <div class="sect-one__brief">
-            <h2>Réservez le menu qui vous convient</h2>
-            <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-            <button class="btn" type="button">Explorer nos restaurants</button>
-        </div>
-        
-        <article class="sect-one__guide">
-            <h2>Fonctionnement</h2>
-            <div class="sect-one__guide-list">
-                <div class="sect-one__guide-list__bloc">
-                    <span class="sect-one__guide-list__bloc__number number">1</span>
-                    <span class="fa fas fa-mobile-alt"></span>
-                    <span class="text">Choisissez un restaurant</span>
-                </div>
-                
-                <div class="sect-one__guide-list__bloc">
-                    <span class="sect-one__guide-list__bloc__number number">2</span>
-                    <span class="fa fas fa-list-ul"></span>
-                    <span class="text">Composez votre menu</span>
-                </div>
-    
-                <div class="sect-one__guide-list__bloc">
-                    <span class="sect-one__guide-list__bloc__number number">3</span>
-                    <span class="fa fas fa-store"></span>
-                    <span class="text">Dégustez au restaurant</span>
-                </div>
+            <div class="sect-one__brief">
+                <h2>Réservez le menu qui vous convient</h2>
+                <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+                <button class="btn" type="button">Explorer nos restaurants</button>
             </div>
-        </article>
+            
+            <article class="sect-one__guide">
+                <h2>Fonctionnement</h2>
+                <div class="sect-one__guide-list">
+                    <div class="sect-one__guide-list__bloc">
+                        <span class="sect-one__guide-list__bloc__number number">1</span>
+                        <span class="fa fas fa-mobile-alt"></span>
+                        <span class="text">Choisissez un restaurant</span>
+                    </div>
+                    
+                    <div class="sect-one__guide-list__bloc">
+                        <span class="sect-one__guide-list__bloc__number number">2</span>
+                        <span class="fa fas fa-list-ul"></span>
+                        <span class="text">Composez votre menu</span>
+                    </div>
+        
+                    <div class="sect-one__guide-list__bloc">
+                        <span class="sect-one__guide-list__bloc__number number">3</span>
+                        <span class="fa fas fa-store"></span>
+                        <span class="text">Dégustez au restaurant</span>
+                    </div>
+                </div>
+            </article>
         </section>
 
         <section class="sect-two">
@@ -73,17 +74,22 @@
             <article class="sect-two__restaurant">           
                 <div class="sect-two__restaurant--div">
                     <div class="sect-two__restaurant__link">
-                    <a href="./pages/la_palette_du_gout.html">
-                        <img src="./assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Alt">
-                        <div class="sect-two__restaurant__link__text">
-                            <div class="sect-two__restaurant__link__text--div">
-                                <h3>La palette du goût</h3>
-                                <p>Ménilmontant</p>
+                        <a href="./pages/la_palette_du_gout.html">
+                            <img src="./assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Alt">
+                            <div class="sect-two__restaurant__link__text">
+                                <div class="sect-two__restaurant__link__text--div">
+                                    <h3>La palette du goût</h3>
+                                    <p>Ménilmontant</p>
+                                </div>
                             </div>
-                        </div>
-                    </a>
+                        </a>
 
-                    <span class="new sect-two__restaurant__link--new">Nouveau</span>
+                        <span class="new sect-two__restaurant__link--new">Nouveau</span>
+                        
+                        <div class="sect-two__restaurant__link__favourite">
+                            <span class="fas fa-heart  sect-two__restaurant__link__favourite--normal"></span>
+                            <span class="far fa-heart sect-two__restaurant__link__favourite--hover"></span>
+                        </div>
                     </div>
 
                     <div class="sect-two__restaurant__link">
@@ -98,22 +104,32 @@
                         </a>
 
                         <span class="new sect-two__restaurant__link--new">Nouveau</span>
+                        
+                        <div class="sect-two__restaurant__link__favourite">
+                            <span class="fas fa-heart  sect-two__restaurant__link__favourite--normal"></span>
+                            <span class="far fa-heart sect-two__restaurant__link__favourite--hover"></span>
+                        </div>
                     </div>
                 </div>
 
                 <div class="sect-two__restaurant--div">
                     <div class="sect-two__restaurant__link">
-                    <a href="./pages/la_palette_du_gout.html">
-                        <img src="./assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Alt">
-                        <div class="sect-two__restaurant__link__text">
-                            <div class="sect-two__restaurant__link__text--div">
-                                <h3>La palette du goût</h3>
-                                <p>Ménilmontant</p>
+                        <a href="./pages/la_palette_du_gout.html">
+                            <img src="./assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Alt">
+                            <div class="sect-two__restaurant__link__text">
+                                <div class="sect-two__restaurant__link__text--div">
+                                    <h3>La palette du goût</h3>
+                                    <p>Ménilmontant</p>
+                                </div>
                             </div>
-                        </div>
-                    </a>
+                        </a>
 
-                    <span class="new sect-two__restaurant__link--new">Nouveau</span>
+                        <span class="new sect-two__restaurant__link--new">Nouveau</span>
+                        
+                        <div class="sect-two__restaurant__link__favourite">
+                            <span class="fas fa-heart  sect-two__restaurant__link__favourite--normal"></span>
+                            <span class="far fa-heart sect-two__restaurant__link__favourite--hover"></span>
+                        </div>
                     </div>
 
                     <div class="sect-two__restaurant__link">
@@ -128,12 +144,16 @@
                         </a>
 
                         <span class="new sect-two__restaurant__link--new">Nouveau</span>
+                        
+                        <div class="sect-two__restaurant__link__favourite">
+                            <span class="fas fa-heart  sect-two__restaurant__link__favourite--normal"></span>
+                            <span class="far fa-heart sect-two__restaurant__link__favourite--hover"></span>
+                        </div>
                     </div>
                 </div>
             </article>
         </section>
     </main>
-
 
     <footer class="footer">
         <h3 class="footer__title">ohmyfood</h3>

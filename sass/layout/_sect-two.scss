@@ -47,6 +47,24 @@
                 width: 80px;
                 @include flex-CC;
             }
+
+            &__favourite {
+                position: relative;
+                &--hover, 
+                &--normal {
+                    bottom: 20px;
+                    cursor: pointer;
+                    position: absolute;
+                    right: 25px;
+                }
+                &--hover {
+                    background-color: $octonary-color;
+                    &:hover {
+                        display: none;
+                        background: none;
+                    }
+                }
+            }
         }
     }
 }
