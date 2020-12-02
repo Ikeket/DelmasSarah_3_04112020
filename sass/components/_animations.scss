@@ -74,6 +74,7 @@
     }
 }
 
+
 // homepage
 
 main {
@@ -96,6 +97,7 @@ main {
     }
 }
 
+
 // menu
 
 section li {
@@ -104,25 +106,49 @@ section li {
     animation-iteration-count: 1;
     animation-name: menu;
     animation-fill-mode: both;
+    &:nth-child(1) {
+        animation-delay: 0.15s;
     }
-        li:nth-child(1) {
-            animation-delay: 0.15s;
-        }
-        li:nth-child(2) {
-            animation-delay: 0.50s;
-        }
-        li:nth-child(3) {
-            animation-delay: 0.95s;
-        }
+    &:nth-child(2) {
+        animation-delay: 0.50s;
+    }
+    &:nth-child(3) {
+        animation-delay: 0.95s;
+    }
+}
+
 
 @keyframes menu {
-0% {
-    opacity: 0;
-    transform: translateY(50px);
-}
-100% {
-    opacity: 1;
-    transform: translateY(0);
-}
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
+
+// checkbox
+
+.checkbox {
+    animation-delay: none;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-name: checkbox;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+    font-size: 1.75em;
+    }
+
+@keyframes checkbox {
+    0% {
+        transform: translateX(100px) rotate(540deg);
+        opacity: 1;
+    }
+    100% {
+            transform: translateX(0) rotate(0deg);
+        opacity: 1;
+    }
+}
