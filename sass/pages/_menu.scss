@@ -63,40 +63,49 @@
         }
 
         &-dish {
-            background-color: $octonary-color;
             display: flex;
             flex-direction: row;
-            height: 70px;
             justify-content: space-between;
+            height: 70px;
             margin: 20px 0;
+            align-items: center;
+            width: 100%;
             overflow: hidden;
             @include box-shadow;
             @include radius15;
-
+            
             &__text {
-                padding: 14px 0 14px 12px;
+                padding: 0 12px;
             }
-            &--flex {
-                display: flex;
+            
+            &__checkbox {
+                position: relative;
+                text-overflow: ellipsis;
+                @include flex-CC;
                 &--price {
-                    display: flex;
                     font-weight: bold;
+                    height: 70px;
+                    width: 60px;
+                    display: flex;
+                    justify-content: flex-end;
                     align-items: flex-end;
-                    margin-bottom: 10px;
-                    margin-right: 20px;
+                    padding-right: 20px;
+                    padding-bottom: 20px;
                 }
-    
-                &__checkbox {
+                &--bg {
+                    background-color: $tertiary-color;
                     width: 60px;
                     height: 70px;
-                    background-color: $tertiary-color;
-                    color: white;
-                    @include flex-CC;
+                    &--icon {
+                        color: white;
+                        width: 60px;
+                        height: 70px;
+                        @include flex-CC;
+                    }
                 }
             }
-
         }
-    }
+        }
 
     & .btn {
         @include flex-CC;

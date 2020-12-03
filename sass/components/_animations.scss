@@ -129,22 +129,39 @@ section li {
     }
 }
 
+.price,
+.checkbox-bg {
+        animation-delay: none;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        animation-name: price;
+        animation-timing-function: ease-out;
+        animation-fill-mode: both;
+}
+    @keyframes price {
+        0% {
+            transform: translateX(100px);
+            opacity: 1;
+        }
+        100% {
+                transform: translateX(0);
+            opacity: 1;
+        }
+    }
 
-// checkbox
-
-.checkbox {
+.checkbox-icon {
     animation-delay: none;
     animation-duration: 3s;
     animation-iteration-count: 1;
-    animation-name: checkbox;
+    animation-name: checkbox-icon;
     animation-timing-function: ease-out;
     animation-fill-mode: both;
     font-size: 1.75em;
     }
 
-@keyframes checkbox {
+@keyframes checkbox-icon {
     0% {
-        transform: translateX(100px) rotate(540deg);
+        transform: translateX(300px) rotate(540deg);
         opacity: 1;
     }
     100% {
