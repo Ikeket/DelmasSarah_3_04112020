@@ -32,6 +32,9 @@ button {
 h2 {
   font-weight: 800;
   font-size: 1.5em;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1440px;
 }
 
 h3 {
@@ -212,6 +215,26 @@ span.new {
   }
 }
 
+main {
+  animation-delay: none;
+  animation-duration: 8s;
+  animation-iteration-count: 1;
+  animation-name: main;
+  animation-fill-mode: forwards;
+}
+
+@keyframes main {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .favourite {
   cursor: pointer;
 }
@@ -349,6 +372,13 @@ span.new {
 
 .footer li .fas.fa-hands-helping {
   transform: scale(0.65, 1) translate(-25%);
+}
+
+.footer__title,
+.footer li {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1440px;
 }
 
 .header {
@@ -497,7 +527,10 @@ span.new {
 
 .sect-two__restaurant {
   margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 20px;
+  max-width: 1440px;
 }
 
 @media (min-width: 600px) {

@@ -77,25 +77,25 @@
 
 // index.html : homepage
 
-// main {
-//     animation-delay: none;
-//     animation-duration: 8s;
-//     animation-iteration-count: 1;
-//     animation-name: main;
-//     animation-fill-mode: forwards;
-// }
+main {
+    animation-delay: none;
+    animation-duration: 8s;
+    animation-iteration-count: 1;
+    animation-name: main;
+    animation-fill-mode: forwards;
+}
 
-// @keyframes main {
-//     0% {
-//         opacity: 0;
-//     }
-//     50% {
-//         opacity: 0;
-//     }
-//     100% {
-//         opacity: 1;
-//     }
-// }
+@keyframes main {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 
 
 // index.html + <restaurant-name>.html : favourite
