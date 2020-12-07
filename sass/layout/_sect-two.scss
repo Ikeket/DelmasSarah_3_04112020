@@ -49,21 +49,21 @@
             }
 
             &__favourite {
-                position: relative;
-                &--hover, 
-                &--normal {
-                    bottom: 20px;
-                    cursor: pointer;
-                    position: absolute;
-                    right: 25px;
-                }
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                @include flex-CC;
+                width: 80px;
+                height: 80px;
+                background-color: red;
                 &--hover {
-                    background-color: $octonary-color;
-                    &:hover {
-                        display: none;
-                        background: none;
-                    }
+                    display: none;
                 }
+
+                // &:hover {
+                //     .fas
+                // }
+
             }
         }
     }

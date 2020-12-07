@@ -90,7 +90,6 @@ span.fa-heart.far {
 }
 
 span.fa-heart.fas {
-  color: #9c47fc;
   background: linear-gradient(175deg, #9356dc 0%, #ff79da 80%, #ff79da 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -214,44 +213,24 @@ span.new {
   }
 }
 
-main {
+.dish {
   animation-delay: none;
-  animation-duration: 8s;
-  animation-iteration-count: 1;
-  animation-name: main;
-  animation-fill-mode: forwards;
-}
-
-@keyframes main {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-section li {
-  animation-delay: none;
-  animation-duration: 2s;
+  animation-duration: 1.38s;
   animation-iteration-count: 1;
   animation-name: menu;
   animation-fill-mode: both;
 }
 
-section li:nth-child(1) {
-  animation-delay: 0.15s;
+.dish:nth-child(2) {
+  animation-delay: 0.25s;
 }
 
-section li:nth-child(2) {
-  animation-delay: 0.50s;
+.dish:nth-child(3) {
+  animation-delay: 0.75s;
 }
 
-section li:nth-child(3) {
-  animation-delay: 0.95s;
+.dish:nth-child(4) {
+  animation-delay: 1.05s;
 }
 
 @keyframes menu {
@@ -265,44 +244,49 @@ section li:nth-child(3) {
   }
 }
 
-.price,
-.checkbox-bg {
+.checkbox {
+  position: relative;
+  overflow: hidden;
+}
+
+.checkbox:hover .checkbox-validation, .checkbox:active .checkbox-validation {
+  animation-name: slide;
+}
+
+.checkbox:hover .checkbox-icon, .checkbox:active .checkbox-icon {
+  animation-name: checkbox-icon;
+}
+
+.checkbox:hover .checkbox-validation,
+.checkbox:hover .checkbox-icon, .checkbox:active .checkbox-validation,
+.checkbox:active .checkbox-icon {
   animation-delay: none;
   animation-duration: 3s;
   animation-iteration-count: 1;
-  animation-name: price;
-  animation-timing-function: ease-out;
   animation-fill-mode: both;
 }
 
-@keyframes price {
+.checkbox .checkbox-validation {
+  position: absolute;
+  right: -60px;
+}
+
+@keyframes slide {
   0% {
-    transform: translateX(100px);
-    opacity: 1;
+    transform: translateX(0);
   }
   100% {
-    transform: translateX(0);
-    opacity: 1;
+    transform: translateX(-60px);
   }
-}
-
-.checkbox-icon {
-  animation-delay: none;
-  animation-duration: 3s;
-  animation-iteration-count: 1;
-  animation-name: checkbox-icon;
-  animation-timing-function: ease-out;
-  animation-fill-mode: both;
-  font-size: 1.75em;
 }
 
 @keyframes checkbox-icon {
   0% {
-    transform: translateX(300px) rotate(540deg);
+    transform: translateX(20px) rotate(-540deg);
     opacity: 1;
   }
   100% {
-    transform: translateX(0) rotate(0deg);
+    transform: translateX(-60px) srotate(0deg);
     opacity: 1;
   }
 }
@@ -531,23 +515,19 @@ section li:nth-child(3) {
 }
 
 .sect-two__restaurant__link__favourite {
-  position: relative;
-}
-
-.sect-two__restaurant__link__favourite--hover, .sect-two__restaurant__link__favourite--normal {
-  bottom: 20px;
-  cursor: pointer;
   position: absolute;
-  right: 25px;
+  bottom: 0;
+  right: 0;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  background-color: red;
 }
 
 .sect-two__restaurant__link__favourite--hover {
-  background-color: white;
-}
-
-.sect-two__restaurant__link__favourite--hover:hover {
   display: none;
-  background: none;
 }
 
 .menu {
@@ -629,48 +609,53 @@ section li:nth-child(3) {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  max-width: 600px;
   height: 70px;
   margin: 20px 0;
   align-items: center;
   width: 100%;
+  position: relative;
   overflow: hidden;
   box-shadow: 0px 0px 12px 2px rgba(158, 158, 158, 0.582);
   border-radius: 15px;
 }
 
 .menu__article-dish__text {
+  width: 200px;
   padding: 0 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .menu__article-dish__checkbox {
-  position: relative;
-  text-overflow: ellipsis;
-  align-items: center;
+  box-sizing: border-box;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  height: 70px;
+  position: relative;
+  width: 120px;
 }
 
 .menu__article-dish__checkbox--price {
-  font-weight: bold;
-  height: 70px;
-  width: 60px;
-  display: flex;
-  justify-content: flex-end;
   align-items: flex-end;
-  padding-right: 20px;
-  padding-bottom: 20px;
+  box-sizing: border-box;
+  display: flex;
+  font-weight: bold;
+  justify-content: flex-end;
+  padding: 10px 15px;
+  width: 60px;
 }
 
 .menu__article-dish__checkbox--bg {
   background-color: #99e2d0;
-  width: 60px;
-  height: 70px;
+  min-width: 60px;
 }
 
 .menu__article-dish__checkbox--bg--icon {
   color: white;
-  width: 60px;
   height: 70px;
+  font-size: 1.75em;
   align-items: center;
   display: flex;
   justify-content: center;
