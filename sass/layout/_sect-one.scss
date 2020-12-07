@@ -32,12 +32,11 @@
 
     &__guide {
         @include padding-homepage;
-        
         @include xl {
-            margin: auto;
-            width: 1023px;
-
-
+            box-sizing: border-box;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 1440px;
             & h2 {
                 margin-bottom: 30px;
                 text-align: center;
