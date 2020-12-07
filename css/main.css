@@ -81,12 +81,11 @@ span.fa.fa-store {
 }
 
 span.fa-heart {
-  font-size: 1.5em;
+  font-size: 1.75em;
 }
 
 span.fa-heart.far {
   color: #353535;
-  font-weight: 100;
 }
 
 span.fa-heart.fas {
@@ -210,6 +209,45 @@ span.new {
   100% {
     background-color: #9356dc;
     opacity: 0;
+  }
+}
+
+.favourite {
+  cursor: pointer;
+}
+
+.favourite:hover .favourite--normal, .favourite:active .favourite--normal {
+  animation-delay: none;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-name: favourite-normal;
+  animation-fill-mode: both;
+}
+
+.favourite:hover .favourite--hover, .favourite:active .favourite--hover {
+  display: inherit;
+  animation-delay: none;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-name: favourite-hover;
+  animation-fill-mode: both;
+}
+
+@keyframes favourite-normal {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes favourite-hover {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
@@ -516,14 +554,19 @@ span.new {
 
 .sect-two__restaurant__link__favourite {
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: 20px;
+  right: 20px;
+  width: 30px;
+  height: 30px;
   align-items: center;
   display: flex;
   justify-content: center;
-  width: 80px;
-  height: 80px;
-  background-color: red;
+}
+
+.sect-two__restaurant__link__favourite--hover, .sect-two__restaurant__link__favourite--normal {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 .sect-two__restaurant__link__favourite--hover {

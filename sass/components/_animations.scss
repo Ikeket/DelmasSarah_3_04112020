@@ -98,6 +98,48 @@
 // }
 
 
+// index.html + <restaurant-name>.html : favourite
+
+.favourite {
+    cursor: pointer;
+    &:hover,
+    &:active {
+        .favourite--normal {
+            animation-delay: none;
+            animation-duration: 2s;
+            animation-iteration-count: 1;
+            animation-name: favourite-normal;
+            animation-fill-mode: both;
+        }
+        .favourite--hover {
+            display: inherit;
+            animation-delay: none;
+            animation-duration: 2s;
+            animation-iteration-count: 1;
+            animation-name: favourite-hover;
+            animation-fill-mode: both;
+        }
+    }
+}
+
+@keyframes favourite-normal {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes favourite-hover {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 // <restaurant-name>.html : menu
 
 .dish {

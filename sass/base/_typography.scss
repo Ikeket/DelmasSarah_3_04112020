@@ -80,10 +80,9 @@ span {
         // favourite icon for menu
         &-heart {
 
-            font-size: 1.5em;
+            font-size: 1.75em;
             &.far {
                 color: $senary-color;
-                font-weight: 100;
             }
             &.fas {
                 background: linear-gradient(175deg, $primary-color 0%, $secondary-color 80%, $secondary-color 100%);
