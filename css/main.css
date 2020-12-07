@@ -703,6 +703,7 @@ main {
 }
 
 .menu__article-dish {
+  background-color: white;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -736,6 +737,7 @@ main {
 
 .menu__article-dish__checkbox--price {
   align-items: flex-end;
+  background-color: white;
   box-sizing: border-box;
   display: flex;
   font-weight: bold;
