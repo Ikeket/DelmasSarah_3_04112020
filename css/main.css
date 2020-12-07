@@ -609,13 +609,16 @@ main {
 }
 
 .menu {
-  background-image: url("./../assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
   background-color: #eaeaea;
   display: flex;
   flex-direction: column;
   padding-bottom: 60px;
+}
+
+.menu__la-palette-du-gout-paris {
+  background-image: url("./../assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
 }
 
 @media (min-width: 900px) {

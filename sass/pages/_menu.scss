@@ -1,6 +1,8 @@
 
 .menu {
-    background-image: url("./../assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+    &__la-palette-du-gout-paris {
+        background-image: url("./../assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+    }
     background-size: 100%;
     background-repeat: no-repeat;
     background-color: $quaternary-color;
