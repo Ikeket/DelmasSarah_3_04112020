@@ -62,6 +62,8 @@ p {
     font-size: 16px;
     font-weight: 300;
     letter-spacing: -0.5px;
+    white-space: wrap;
+    text-overflow: ellipsis;
 }
 
 span {

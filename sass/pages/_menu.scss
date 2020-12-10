@@ -66,39 +66,39 @@
             margin: 20px 0;
             width: 100%;
             position: relative;
-            overflow: hidden;
             @include box-shadow;
             @include radius15;
             &__text {
                 padding: 10px 12px;
+                position: relative;
+                width: 100%;
+                &--wrap {
+                    white-space: wrap;
+                    width: calc(100% - 30px);
+                }
+                &--price {
+                    bottom: 10px;
+                    font-weight: bold;
+                    position: absolute;
+                    right: 10px;
+                    width: 30px;
+                }
             }
             &__checkbox {
-                box-sizing: border-box;
-                display: flex;
-                flex-direction: row;
-                height: 70px;
                 position: relative;
-                width: 100px;
-                &--price {
-                    align-items: flex-end;
-                    background-color: $octonary-color;
-                    box-sizing: border-box;
-                    display: flex;
-                    font-weight: bold;
-                    justify-content: flex-end;
-                    padding: 15px 15px;
-                    width: 40px;
-                }
                 &--bg {
                     background-color: $tertiary-color;
-                    min-width: 60px;
-                    &--icon {
-                        color: $octonary-color;
-                        height: 70px;
-                        font-size: 1.75em;
-                        @include flex-CC;
-                    }
+                    position: absolute;
+                    right: -70px;
+                    width: 70px;
                 }
+                &-icon {
+                    color: $octonary-color;
+                    height: 200px;
+                    @include flex-CC;
+                }
+
+
             }
         }
     }
