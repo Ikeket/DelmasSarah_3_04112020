@@ -285,7 +285,7 @@ main {
 
 .dish {
   animation-delay: none;
-  animation-duration: 1.38s;
+  animation-duration: 1.50s;
   animation-iteration-count: 1;
   animation-name: menu;
   animation-fill-mode: both;
@@ -301,6 +301,10 @@ main {
 
 .dish:nth-child(4) {
   animation-delay: 1.05s;
+}
+
+.dish:nth-child(5) {
+  animation-delay: 1.35s;
 }
 
 @keyframes menu {
