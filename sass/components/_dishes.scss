@@ -1,0 +1,77 @@
+.checkbox {
+    align-items: center;
+    background-color: $octonary-color;
+    // box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    height: 70px;
+    justify-content: space-between;
+    margin: 20px 0;
+    overflow: hidden;
+    width: 100%;
+    @include box-shadow;
+    @include radius15;
+
+    & .text {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        padding: 10px 15px 10px 15px;
+        transition: width 1s linear;
+        width: 100%;
+        & p {
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+    }
+
+    & .wrap {
+        width: calc(100% - 35px);
+    }
+
+    & .price {
+        box-sizing: border-box;
+        font-weight: bold;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        width: 35px;
+    }
+
+    & .bg {
+        opacity: 1;
+        color: $octonary-color;
+        background-color: $tertiary-color;
+        width: 0;
+        height: 200px;
+        transition: width 1s linear;
+        @include flex-CC;
+    }
+
+    & .price {
+        transition: none;
+    }
+
+    & .icon {
+        transform: rotate(0deg);
+        opacity: 0;
+    }
+
+    &:hover {
+        & .text {
+            transition: width 2s linear;
+            width: calc(100% - 70px);
+        }
+        & .bg {
+            opacity: 1;
+            transition: width 1s linear;
+            width: 70px;
+        }
+        & .bg-icon {
+            transform: rotate(360deg);
+            transition: transform 1s linear;
+            opacity: 1;
+        }
+    }
+}

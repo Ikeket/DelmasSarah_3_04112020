@@ -55,52 +55,6 @@
         &--underline {
             border-bottom: 2px solid $tertiary-color;
         }
-
-        &-dish {
-            align-items: center;
-            background-color: $octonary-color;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            height: fit-content;
-            margin: 20px 0;
-            width: 100%;
-            position: relative;
-            @include box-shadow;
-            @include radius15;
-            &__text {
-                padding: 10px 12px;
-                position: relative;
-                width: 100%;
-                &--wrap {
-                    white-space: wrap;
-                    width: calc(100% - 30px);
-                }
-                &--price {
-                    bottom: 10px;
-                    font-weight: bold;
-                    position: absolute;
-                    right: 10px;
-                    width: 30px;
-                }
-            }
-            &__checkbox {
-                position: relative;
-                &--bg {
-                    background-color: $tertiary-color;
-                    position: absolute;
-                    right: -70px;
-                    width: 70px;
-                }
-                &-icon {
-                    color: $octonary-color;
-                    height: 200px;
-                    @include flex-CC;
-                }
-
-
-            }
-        }
     }
 
     &__title,
