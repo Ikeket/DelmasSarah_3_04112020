@@ -341,7 +341,8 @@ main {
   width: 100%;
 }
 
-.checkbox .text p {
+.checkbox .text p,
+.checkbox .text h3 {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;

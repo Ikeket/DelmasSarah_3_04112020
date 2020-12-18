@@ -19,7 +19,8 @@
         padding: 10px 15px 10px 15px;
         transition: width 1s linear;
         width: 100%;
-        & p {
+        & p,
+        & h3 {
             white-space: nowrap;
             text-overflow: ellipsis;
             overflow: hidden;
