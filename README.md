@@ -7,10 +7,3 @@
 
 
 Lien gitpages : https://ikeket.github.io/DelmasSarah_3_04112020/
-
-
-<<<<<<< HEAD
-https://ikeket.github.io/DelmasSarah_3_04112020/
-
-=======
->>>>>>> d658f123207d1f5536c87f15fd5ce4c212673649
