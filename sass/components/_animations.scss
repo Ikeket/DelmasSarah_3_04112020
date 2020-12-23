@@ -7,7 +7,7 @@
     transform: scale(0.6);
     width: 50px;
     &__circle {
-        animation-delay: none;
+        animation-delay: 0s;
         animation-duration: 2.56s;
         animation-iteration-count: 1;
         animation-name: loader;
@@ -78,7 +78,7 @@
 // index.html : homepage
 
 main {
-    animation-delay: none;
+    animation-delay: 0s;
     animation-duration: 8s;
     animation-iteration-count: 1;
     animation-name: main;
@@ -105,7 +105,7 @@ main {
     &:hover,
     &:active {
         .favourite--normal {
-            animation-delay: none;
+            animation-delay: 0s;
             animation-duration: 2s;
             animation-iteration-count: 1;
             animation-name: favourite-normal;
@@ -113,7 +113,7 @@ main {
         }
         .favourite--hover {
             display: inherit;
-            animation-delay: none;
+            animation-delay: 0s;
             animation-duration: 2s;
             animation-iteration-count: 1;
             animation-name: favourite-hover;
@@ -143,7 +143,7 @@ main {
 // <restaurant-name>.html : menu
 
 .dish {
-    animation-delay: none;
+    animation-delay: 0s;
     animation-duration: 1.50s;
     animation-iteration-count: 1;
     animation-name: menu;
