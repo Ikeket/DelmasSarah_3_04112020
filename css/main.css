@@ -68,7 +68,7 @@ p {
   font-size: 16px;
   font-weight: 300;
   letter-spacing: -0.5px;
-  white-space: no-wrap;
+  white-space: nowrap;
   text-overflow: ellipsis;
 }
 
